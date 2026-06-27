@@ -1,13 +1,12 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
 using System.Reflection;
-using Verse;
 
 namespace RT_SolarFlareShield
 {
 	[HarmonyPatch(typeof(PowerNet))]
-	[HarmonyPatch("PowerNetTick")]
+	[HarmonyPatch(nameof(PowerNet.PowerNetTick))]
 	internal static class Patch_PowerNetTick
 	{
 		public static IEnumerable<CodeInstruction> Transpiler(
@@ -15,18 +14,13 @@ namespace RT_SolarFlareShield
 			IEnumerable<CodeInstruction> instructions)
 		{
 			return instructions.MethodReplacer(
-				AccessTools.Method(typeof(GameConditionManager), "ConditionIsActive"),
-				AccessTools.Method(typeof(Patch_PowerNetTick), "ConditionIsActive"));
+				AccessTools.Method(typeof(GameConditionManager), nameof(GameConditionManager.ElectricityDisabled)),
+				AccessTools.Method(typeof(Patch_PowerNetTick), nameof(Patch_PowerNetTick.ElectricityDisabled)));
 		}
 
-		public static bool ConditionIsActive(this GameConditionManager instance, GameConditionDef def)
+		public static bool ElectricityDisabled(this GameConditionManager instance, Verse.Map map)
 		{
-			bool result = instance.ConditionIsActive(def);
-			if (result && def == GameConditionDefOf.SolarFlare)
-			{
-				return !instance.ownerMap.GetShieldCoordinator().HasActiveShield();
-			}
-			return result;
+			return instance.ElectricityDisabled(map) && !map.GetShieldCoordinator().HasActiveShield();
 		}
 	}
 }

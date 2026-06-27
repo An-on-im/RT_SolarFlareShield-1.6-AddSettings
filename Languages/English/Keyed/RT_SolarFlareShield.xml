@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<CompRTSolarFlareShield_FlareProtection>Protects entire colony against solar flares.</CompRTSolarFlareShield_FlareProtection>
+  <RT_SolarFlareShield_ModName>RT Solar Flare Shield</RT_SolarFlareShield_ModName>
+  <RT_Setting_IdlePowerDraw>Idle power draw</RT_Setting_IdlePowerDraw>
+  <RT_Setting_ActivePowerDraw>Active power draw</RT_Setting_ActivePowerDraw>
+  <RT_Setting_HeatPerTick>Heat generation per tick</RT_Setting_HeatPerTick>
+  <RT_Setting_RotatorSpeedActive>Rotator speed (active)</RT_Setting_RotatorSpeedActive>
+  <RT_Setting_RotatorSpeedIdle>Rotator speed (idle)</RT_Setting_RotatorSpeedIdle>
+  <RT_Setting_IdlePowerDraw_Tooltip>How much power the shield consumes when it is ON but no solar flare is active.\nLower values make the shield cheaper to keep ready.\nDefault: 50 W</RT_Setting_IdlePowerDraw_Tooltip>
+  <RT_Setting_ActivePowerDraw_Tooltip>How much power the shield consumes when protecting the colony from an EMP/solar flare.\nHigher values make the shield more expensive to operate but it already protects against total blackout.\nDefault: 25000 W</RT_Setting_ActivePowerDraw_Tooltip>
+  <RT_Setting_HeatPerTick_Tooltip>How much heat the shield generates per tick while active.\nHigher values cause more temperature rise in the room, requiring cooling.\nSet to 0 to disable heat generation entirely.\nDefault: 0.5</RT_Setting_HeatPerTick_Tooltip>
+  <RT_Setting_RotatorSpeedActive_Tooltip>Rotation speed of the shield's visual effect when active.\nPurely visual, does not affect gameplay.\nDefault: 20</RT_Setting_RotatorSpeedActive_Tooltip>
+  <RT_Setting_RotatorSpeedIdle_Tooltip>Rotation speed of the shield's visual effect when idle (no flare).\nPurely visual, does not affect gameplay.\nDefault: 0.5</RT_Setting_RotatorSpeedIdle_Tooltip>
+  <RT_ResetToDefaults>Reset to defaults</RT_ResetToDefaults>
+</LanguageData>

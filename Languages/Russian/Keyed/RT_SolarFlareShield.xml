@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<CompRTSolarFlareShield_FlareProtection>Защищает всю колонию от солнечных вспышек.</CompRTSolarFlareShield_FlareProtection>
+  <RT_SolarFlareShield_ModName>RT Solar Flare Shield</RT_SolarFlareShield_ModName>
+  <RT_Setting_IdlePowerDraw>Потребление в режиме ожидания</RT_Setting_IdlePowerDraw>
+  <RT_Setting_ActivePowerDraw>Потребление в активном режиме</RT_Setting_ActivePowerDraw>
+  <RT_Setting_HeatPerTick>Нагрев за тик</RT_Setting_HeatPerTick>
+  <RT_Setting_RotatorSpeedActive>Скорость вращения (активный)</RT_Setting_RotatorSpeedActive>
+  <RT_Setting_RotatorSpeedIdle>Скорость вращения (ожидание)</RT_Setting_RotatorSpeedIdle>
+  <RT_Setting_IdlePowerDraw_Tooltip>Сколько энергии потребляет щит, когда он ВКЛЮЧЁН, но солнечная вспышка не активна.\nМеньшие значения делают щит дешевле в содержании.\nПо умолчанию: 50 Вт</RT_Setting_IdlePowerDraw_Tooltip>
+  <RT_Setting_ActivePowerDraw_Tooltip>Сколько энергии потребляет щит при защите колонии от ЭМИ/солнечной вспышки.\nБолее высокие значения увеличивают стоимость работы, но щит уже защищает от полного отключения электричества.\nПо умолчанию: 25000 Вт</RT_Setting_ActivePowerDraw_Tooltip>
+  <RT_Setting_HeatPerTick_Tooltip>Сколько тепла генерирует щит за тик в активном режиме.\nБолее высокие значения вызывают больший нагрев в помещении, требуя охлаждения.\nУстановите 0, чтобы полностью отключить нагрев.\nПо умолчанию: 0.5</RT_Setting_HeatPerTick_Tooltip>
+  <RT_Setting_RotatorSpeedActive_Tooltip>Скорость вращения визуального эффекта щита в активном режиме.\nЧисто визуальный параметр, не влияет на геймплей.\nПо умолчанию: 20</RT_Setting_RotatorSpeedActive_Tooltip>
+  <RT_Setting_RotatorSpeedIdle_Tooltip>Скорость вращения визуального эффекта щита в режиме ожидания (без вспышки).\nЧисто визуальный параметр, не влияет на геймплей.\nПо умолчанию: 0.5</RT_Setting_RotatorSpeedIdle_Tooltip>
+  <RT_ResetToDefaults>Сбросить на стандартные</RT_ResetToDefaults>
+</LanguageData>

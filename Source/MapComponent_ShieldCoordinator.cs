@@ -13,7 +13,8 @@ namespace RT_SolarFlareShield
 
 		public bool HasActiveShield()
 		{
-			foreach (var shield in shields) {
+			foreach (var shield in shields)
+			{
 				if (shield.Active)
 				{
 					return true;
